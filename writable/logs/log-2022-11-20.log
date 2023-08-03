@@ -1,0 +1,67 @@
+CRITICAL - 2022-11-20 00:20:33 --> Undefined variable $session
+in APPPATH\Views\main_layout.php on line 49.
+ 1 APPPATH\Views\main_layout.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\main_layout.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('main_layout', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(13): view('main_layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:21:05 --> session_start(): Ignoring session_start() because a session is already active
+in APPPATH\Views\main_layout.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'session_start(): Ignoring session_start() because a session is already active', 'APPPATH\\Views\\main_layout.php', 2)
+ 2 APPPATH\Views\main_layout.php(2): session_start()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main_layout.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('main_layout', [], true)
+ 6 APPPATH\Controllers\Dashboard.php(13): view('main_layout', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:21:35 --> Undefined variable $session
+in APPPATH\Views\main_layout.php on line 53.
+ 1 APPPATH\Views\main_layout.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\main_layout.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\main_layout.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('main_layout', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(13): view('main_layout', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:44:02 --> Call to undefined method App\Controllers\SigninController::isLoggedIn()
+in APPPATH\Controllers\SigninController.php on line 48.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SigninController->loginAuth()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:47:16 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\SigninController.php on line 14.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SigninController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SigninController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SigninController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\SigninController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 00:47:31 --> Undefined constant "App\Controllers\islog1"
+in APPPATH\Controllers\SigninController.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SigninController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 02:11:46 --> Call to undefined method App\Controllers\SigninController::isLoggedIn()
+in APPPATH\Controllers\SigninController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SigninController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-20 03:03:42 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+in APPPATH\Controllers\SigninController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SigninController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

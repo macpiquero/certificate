@@ -1,0 +1,141 @@
+CRITICAL - 2023-02-02 10:08:43 --> Class "App\Controllers\Time" not found
+in APPPATH\Controllers\Employee.php on line 111.
+ 1 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:14:36 --> Undefined array key "data"
+in APPPATH\Controllers\Employee.php on line 39.
+ 1 APPPATH\Controllers\Employee.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\Employee.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:14:54 --> Class "App\Controllers\Time" not found
+in APPPATH\Controllers\Employee.php on line 111.
+ 1 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:18:35 --> Class "App\Time" not found
+in APPPATH\Controllers\Employee.php on line 112.
+ 1 APPPATH\Controllers\Employee.php(90): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:28:42 --> Failed to parse time string (29/05/1996) at position 0 (2): Unexpected character
+in SYSTEMPATH\I18n\Time.php on line 100.
+ 1 SYSTEMPATH\I18n\Time.php(100): DateTime->__construct('29/05/1996', Object(DateTimeZone))
+ 2 SYSTEMPATH\I18n\Time.php(131): CodeIgniter\I18n\Time->__construct('29/05/1996', 'Asia/Manila', null)
+ 3 APPPATH\Controllers\Employee.php(112): CodeIgniter\I18n\Time::parse('29/05/1996')
+ 4 APPPATH\Controllers\Employee.php(90): App\Controllers\Employee->calc_age('29/05/1996')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:40:13 --> Failed to parse time string (29/05/1996) at position 0 (2): Unexpected character
+in SYSTEMPATH\I18n\Time.php on line 100.
+ 1 SYSTEMPATH\I18n\Time.php(100): DateTime->__construct('29/05/1996', Object(DateTimeZone))
+ 2 SYSTEMPATH\I18n\Time.php(131): CodeIgniter\I18n\Time->__construct('29/05/1996', 'Asia/Manila', null)
+ 3 APPPATH\Controllers\Employee.php(112): CodeIgniter\I18n\Time::parse('29/05/1996')
+ 4 APPPATH\Controllers\Employee.php(90): App\Controllers\Employee->calc_age('29/05/1996')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 10:40:51 --> Call to undefined method CodeIgniter\I18n\Time::age()
+in APPPATH\Controllers\Employee.php on line 116.
+ 1 APPPATH\Controllers\Employee.php(90): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 20:45:11 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 867.
+ 1 SYSTEMPATH\BaseModel.php(867): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Employee.php(198): CodeIgniter\Model->update([...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 20:49:06 --> Undefined array key "id"
+in APPPATH\Controllers\Employee.php on line 198.
+ 1 APPPATH\Controllers\Employee.php(198): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'APPPATH\\Controllers\\Employee.php', 198)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 20:52:30 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(199): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:08:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(200): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:11:21 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(198): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:12:40 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(192): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:26:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(192): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:28:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(198): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-02 21:36:34 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1598.
+ 1 SYSTEMPATH\BaseModel.php(1598): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(853): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\Employee.php(197): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

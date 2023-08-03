@@ -1,0 +1,44 @@
+CRITICAL - 2023-02-28 17:01:36 --> Undefined variable $validation
+in APPPATH\Views\time\index.php on line 60.
+ 1 APPPATH\Views\time\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\time\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\time\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('time/index', [], true)
+ 5 APPPATH\Controllers\Time.php(17): view('time/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-28 17:01:59 --> Undefined variable $validation
+in APPPATH\Views\time\index.php on line 60.
+ 1 APPPATH\Views\time\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\time\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\time\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('time/index', [], true)
+ 5 APPPATH\Controllers\Time.php(17): view('time/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-28 17:02:20 --> Undefined variable $validation
+in APPPATH\Views\time\index.php on line 60.
+ 1 APPPATH\Views\time\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\time\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\time\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('time/index', [], true)
+ 5 APPPATH\Controllers\Time.php(17): view('time/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-28 17:03:16 --> Undefined variable $validation
+in APPPATH\Views\time\index.php on line 58.
+ 1 APPPATH\Views\time\index.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $validation', 'APPPATH\\Views\\time\\index.php', 58)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\time\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('time/index', [], true)
+ 5 APPPATH\Controllers\Time.php(17): view('time/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,29 @@
+CRITICAL - 2023-02-13 17:34:04 --> syntax error, unexpected token ";"
+in APPPATH\Views\employee\edit.php on line 80.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-13 17:37:03 --> Undefined array key "emp_id"
+in APPPATH\Views\employee\edit.php on line 82.
+ 1 APPPATH\Views\employee\edit.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "emp_id"', 'APPPATH\\Views\\employee\\edit.php', 82)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-13 17:40:42 --> syntax error, unexpected token ">", expecting end of file
+in APPPATH\Views\employee\edit.php on line 101.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

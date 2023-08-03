@@ -1,0 +1,321 @@
+ERROR - 2023-03-20 22:53:43 --> mysqli_sql_exception: Unknown column 'firstname' in 'where clause' in C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrm\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrm\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrm\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\hrm\app\Controllers\Time.php(71): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\hrm\system\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+#8 C:\xampp\htdocs\hrm\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+#9 C:\xampp\htdocs\hrm\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\hrm\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-20 22:53:43 --> Unknown column 'firstname' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `firstname` LIKE \'%%\' ESCAPE \'!\'
+OR  `middlename` LIKE \'%%\' ESCAPE \'!\'
+OR  `lastname` LIKE \'%%\' ESCAPE \'!\'
+OR  `birthdate` LIKE \'%%\' ESCAPE \'!\'
+OR  `address` LIKE \'%%\' ESCAPE \'!\'
+OR  `personal_email` LIKE \'%%\' ESCAPE \'!\'
+OR  `company_email` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `employee_id` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `firstname` LIKE \'%%\' ESCAPE \'!\'
+OR  `middlename` LIKE \'%%\' ESCAPE \'!\'
+OR  `lastname` LIKE \'%%\' ESCAPE \'!\'
+OR  `birthdate` LIKE \'%%\' ESCAPE \'!\'
+OR  `address` LIKE \'%%\' ESCAPE \'!\'
+OR  `personal_email` LIKE \'%%\' ESCAPE \'!\'
+OR  `company_email` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `employee_id` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `firstname` LIKE \'%%\' ESCAPE \'!\'
+OR  `middlename` LIKE \'%%\' ESCAPE \'!\'
+OR  `lastname` LIKE \'%%\' ESCAPE \'!\'
+OR  `birthdate` LIKE \'%%\' ESCAPE \'!\'
+OR  `address` LIKE \'%%\' ESCAPE \'!\'
+OR  `personal_email` LIKE \'%%\' ESCAPE \'!\'
+OR  `company_email` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `employee_id` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE :employee_id: ESCAPE \'!\'
+OR  `firstname` LIKE :firstname: ESCAPE \'!\'
+OR  `middlename` LIKE :middlename: ESCAPE \'!\'
+OR  `lastname` LIKE :lastname: ESCAPE \'!\'
+OR  `birthdate` LIKE :birthdate: ESCAPE \'!\'
+OR  `address` LIKE :address: ESCAPE \'!\'
+OR  `personal_email` LIKE :personal_email: ESCAPE \'!\'
+OR  `company_email` LIKE :company_email: ESCAPE \'!\'
+ORDER BY `employee_id` ASC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 APPPATH\Controllers\Time.php(71): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-20 23:27:58 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Employee.php on line 128.
+ 1 APPPATH\Controllers\Employee.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Employee.php', 128)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('35')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-20 23:28:11 --> mysqli_sql_exception: Unknown column 'time' in 'order clause' in C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrm\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrm\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrm\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\hrm\app\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\hrm\system\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+#8 C:\xampp\htdocs\hrm\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+#9 C:\xampp\htdocs\hrm\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\hrm\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-20 23:28:11 --> Unknown column 'time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE :employee_id: ESCAPE \'!\'
+OR  `employee_no` LIKE :employee_no.1: ESCAPE \'!\'
+OR  `date_time` LIKE :date_time.1: ESCAPE \'!\'
+OR  `time_in_out` LIKE :time_in_out: ESCAPE \'!\'
+OR  `action` LIKE :action: ESCAPE \'!\'
+ORDER BY `time` ASC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 APPPATH\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-20 23:28:15 --> mysqli_sql_exception: Unknown column 'time' in 'order clause' in C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrm\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrm\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrm\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\hrm\app\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\hrm\system\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+#8 C:\xampp\htdocs\hrm\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+#9 C:\xampp\htdocs\hrm\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\hrm\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-20 23:28:15 --> Unknown column 'time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%%\' ESCAPE \'!\'
+OR  `action` LIKE \'%%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE :employee_id: ESCAPE \'!\'
+OR  `employee_no` LIKE :employee_no.1: ESCAPE \'!\'
+OR  `date_time` LIKE :date_time.1: ESCAPE \'!\'
+OR  `time_in_out` LIKE :time_in_out: ESCAPE \'!\'
+OR  `action` LIKE :action: ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 APPPATH\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-20 23:28:19 --> mysqli_sql_exception: Unknown column 'time' in 'order clause' in C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrm\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrm\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrm\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\hrm\app\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\hrm\system\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+#8 C:\xampp\htdocs\hrm\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+#9 C:\xampp\htdocs\hrm\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\hrm\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-20 23:28:19 --> Unknown column 'time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%10%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%10%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%10%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%10%\' ESCAPE \'!\'
+OR  `action` LIKE \'%10%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%10%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%10%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%10%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%10%\' ESCAPE \'!\'
+OR  `action` LIKE \'%10%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%10%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%10%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%10%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%10%\' ESCAPE \'!\'
+OR  `action` LIKE \'%10%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE :employee_id: ESCAPE \'!\'
+OR  `employee_no` LIKE :employee_no.1: ESCAPE \'!\'
+OR  `date_time` LIKE :date_time.1: ESCAPE \'!\'
+OR  `time_in_out` LIKE :time_in_out: ESCAPE \'!\'
+OR  `action` LIKE :action: ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 APPPATH\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-03-20 23:28:20 --> mysqli_sql_exception: Unknown column 'time' in 'order clause' in C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\hrm\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\hrm\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\hrm\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\hrm\system\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\hrm\system\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\hrm\app\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\hrm\system\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+#8 C:\xampp\htdocs\hrm\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+#9 C:\xampp\htdocs\hrm\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\hrm\index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-03-20 23:28:20 --> Unknown column 'time' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%100%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%100%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%100%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%100%\' ESCAPE \'!\'
+OR  `action` LIKE \'%100%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%100%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%100%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%100%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%100%\' ESCAPE \'!\'
+OR  `action` LIKE \'%100%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE \'%100%\' ESCAPE \'!\'
+OR  `employee_no` LIKE \'%100%\' ESCAPE \'!\'
+OR  `date_time` LIKE \'%100%\' ESCAPE \'!\'
+OR  `time_in_out` LIKE \'%100%\' ESCAPE \'!\'
+OR  `action` LIKE \'%100%\' ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `timesheet_logs`
+WHERE `employee_id` LIKE :employee_id: ESCAPE \'!\'
+OR  `employee_no` LIKE :employee_no.1: ESCAPE \'!\'
+OR  `date_time` LIKE :date_time.1: ESCAPE \'!\'
+OR  `time_in_out` LIKE :time_in_out: ESCAPE \'!\'
+OR  `action` LIKE :action: ESCAPE \'!\'
+ORDER BY `time` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(223): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(585): CodeIgniter\Model->doFindAll(10, 0)
+ 7 APPPATH\Controllers\Time.php(68): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 9 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+10 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-20 23:28:28 --> Undefined array key "data"
+in APPPATH\Controllers\Time.php on line 35.
+ 1 APPPATH\Controllers\Time.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'APPPATH\\Controllers\\Time.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Time->getEmployeInOut()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Time))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

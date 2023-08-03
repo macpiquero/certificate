@@ -1,0 +1,107 @@
+CRITICAL - 2023-02-01 19:22:30 --> Call to undefined method CodeIgniter\HTTP\Files\UploadedFile::readCSV()
+in APPPATH\Controllers\Employee.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 19:57:45 --> Array to string conversion
+in APPPATH\Controllers\Employee.php on line 121.
+ 1 APPPATH\Controllers\Employee.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Employee.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 19:58:37 --> Undefined array key "employee_id"
+in APPPATH\Controllers\Employee.php on line 93.
+ 1 APPPATH\Controllers\Employee.php(93): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "employee_id"', 'APPPATH\\Controllers\\Employee.php', 93)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 19:59:16 --> Array to string conversion
+in APPPATH\Controllers\Employee.php on line 121.
+ 1 APPPATH\Controllers\Employee.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Employee.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 20:01:42 --> The route for "/employee" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/employee')
+ 2 APPPATH\Controllers\Employee.php(122): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 20:45:12 --> Invalid file: employee.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('employee.php')
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee', [], true)
+ 3 APPPATH\Controllers\Employee.php(43): view('employee', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:00:46 --> Undefined array key "email"
+in APPPATH\Controllers\Employee.php on line 88.
+ 1 APPPATH\Controllers\Employee.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Employee.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:03:28 --> Undefined variable $base_url_addMemberdataRequest
+in APPPATH\Views\employee\index.php on line 94.
+ 1 APPPATH\Views\employee\index.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url_addMemberdataRequest', 'APPPATH\\Views\\employee\\index.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/index', [], true)
+ 5 APPPATH\Controllers\Employee.php(23): view('employee/index')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:03:49 --> Undefined array key "email"
+in APPPATH\Controllers\Employee.php on line 88.
+ 1 APPPATH\Controllers\Employee.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'APPPATH\\Controllers\\Employee.php', 88)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:04:31 --> Undefined variable $dateOfBirth
+in APPPATH\Controllers\Employee.php on line 113.
+ 1 APPPATH\Controllers\Employee.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dateOfBirth', 'APPPATH\\Controllers\\Employee.php', 113)
+ 2 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:06:26 --> Undefined variable $dateofBirth
+in APPPATH\Controllers\Employee.php on line 113.
+ 1 APPPATH\Controllers\Employee.php(113): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dateofBirth', 'APPPATH\\Controllers\\Employee.php', 113)
+ 2 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:06:43 --> date_diff(): Argument #1 ($baseObject) must be of type DateTimeInterface, bool given
+in APPPATH\Controllers\Employee.php on line 113.
+ 1 APPPATH\Controllers\Employee.php(113): date_diff(false, Object(DateTime))
+ 2 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 3 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 4 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 5 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:10:59 --> Class "App\Controllers\DateTime" not found
+in APPPATH\Controllers\Employee.php on line 111.
+ 1 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 22:15:00 --> Class "App\Controllers\Time" not found
+in APPPATH\Controllers\Employee.php on line 111.
+ 1 APPPATH\Controllers\Employee.php(89): App\Controllers\Employee->calc_age('29/05/1996')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->getEmployee()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

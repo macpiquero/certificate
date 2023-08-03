@@ -1,0 +1,62 @@
+CRITICAL - 2023-02-17 23:40:54 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Employee.php on line 183.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Employee.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Employee')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Employee')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Employee', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 23:44:59 --> Undefined variable $company_date
+in APPPATH\Views\employee\edit.php on line 264.
+ 1 APPPATH\Views\employee\edit.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $company_date', 'APPPATH\\Views\\employee\\edit.php', 264)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Employee.php(138): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 23:45:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\employee\edit.php on line 264.
+ 1 APPPATH\Views\employee\edit.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\employee\\edit.php', 264)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Employee.php(138): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 23:47:41 --> Undefined array key "job_title"
+in APPPATH\Views\employee\edit.php on line 271.
+ 1 APPPATH\Views\employee\edit.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "job_title"', 'APPPATH\\Views\\employee\\edit.php', 271)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Employee.php(138): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 23:48:03 --> Trying to access array offset on value of type null
+in APPPATH\Views\employee\edit.php on line 271.
+ 1 APPPATH\Views\employee\edit.php(271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\employee\\edit.php', 271)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\employee\\edit.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 5 APPPATH\Controllers\Employee.php(138): view('employee/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-17 23:55:29 --> syntax error, unexpected token ";", expecting "]"
+in APPPATH\Controllers\Employee.php on line 189.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Employee.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Employee')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Employee')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Employee', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

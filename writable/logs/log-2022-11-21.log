@@ -1,0 +1,20 @@
+CRITICAL - 2022-11-21 04:11:27 --> Call to undefined method CodeIgniter\Session\Session::session_destroy()
+in APPPATH\Controllers\SigninController.php on line 76.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\SigninController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 04:21:08 --> Undefined property: App\Controllers\Dashboard::$session
+in APPPATH\Controllers\Dashboard.php on line 20.
+ 1 APPPATH\Controllers\Dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Dashboard::$session', 'APPPATH\\Controllers\\Dashboard.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 04:49:30 --> Undefined variable $session
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 APPPATH\Controllers\Dashboard.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Dashboard.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

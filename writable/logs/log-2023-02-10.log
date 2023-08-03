@@ -1,0 +1,90 @@
+CRITICAL - 2023-02-10 14:57:56 --> Undefined variable $session
+in APPPATH\Controllers\Employee.php on line 163.
+ 1 APPPATH\Controllers\Employee.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Employee.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee_data()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 14:58:03 --> Undefined variable $session
+in APPPATH\Controllers\Employee.php on line 163.
+ 1 APPPATH\Controllers\Employee.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Controllers\\Employee.php', 163)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->update_employee_data()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 16:07:45 --> Undefined variable $emp_id
+in APPPATH\Controllers\Employee.php on line 257.
+ 1 APPPATH\Controllers\Employee.php(257): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $emp_id', 'APPPATH\\Controllers\\Employee.php', 257)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 18:20:29 --> Undefined variable $message_insert
+in APPPATH\Controllers\Employee.php on line 273.
+ 1 APPPATH\Controllers\Employee.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message_insert', 'APPPATH\\Controllers\\Employee.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 18:21:07 --> Undefined variable $message_insert
+in APPPATH\Controllers\Employee.php on line 273.
+ 1 APPPATH\Controllers\Employee.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message_insert', 'APPPATH\\Controllers\\Employee.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 18:21:43 --> Undefined variable $message
+in APPPATH\Controllers\Employee.php on line 273.
+ 1 APPPATH\Controllers\Employee.php(273): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'APPPATH\\Controllers\\Employee.php', 273)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 18:34:58 --> syntax error, unexpected variable "$employee_data", expecting "," or ";"
+in APPPATH\Views\employee\edit.php on line 75.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(130): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 18:41:59 --> Call to a member function getName() on resource
+in APPPATH\Controllers\Employee.php on line 265.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->upload_csv()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 20:28:46 --> Class "App\Controllers\PositionsModel" not found
+in APPPATH\Controllers\Employee.php on line 122.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 20:37:15 --> syntax error, unexpected token ";"
+in APPPATH\Views\employee\edit.php on line 184.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 20:44:54 --> syntax error, unexpected identifier "position_acronym", expecting "," or ";"
+in APPPATH\Views\employee\edit.php on line 177.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-10 20:45:02 --> syntax error, unexpected identifier "position_acronym", expecting "," or ";"
+in APPPATH\Views\employee\edit.php on line 177.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('employee/edit', [], true)
+ 3 APPPATH\Controllers\Employee.php(134): view('employee/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Employee->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Employee))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
